@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>GPR Editar Colaborador</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="../../css/gpr.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    </h:head>
+    <h:body>
+
+    </h:body>
+    <div class="fila">
+        <div>
+            <img class="logo" src="#{request.contextPath}/image/logotipo_peq.png" alt="logo"/>
+        </div>
+        <div class="">
+            <a class="button button_black" href="#{request.contextPath}/index.xhtml">Home</a>
+            <a class="button button_black" href="#{request.contextPath}modulos/gestion/gestion_incidentes.xhtml">Incidentes</a>
+            <a class="button button_black button_selected" href="#{request.contextPath}/modulos/colaboradores/colaboradores.xhtml">Colaboradores</a>
+            <a class="button button_black" href="#{request.contextPath}modulos/inventarios/inventario.xhtml">Inventario</a>
+            <a class="button button_black" href="#{request.contextPath}modulos/registro/Registro.xhtml">Salir</a>
+        </div>
+        <div class="" style="max-width: 160px;">
+            <div class="avatar">
+                <img class="imguser" src="#{request.contextPath}/image/Logo_user.png" alt="imguser"/>
+            </div>
+            <div style="max-width: 80px;">Tecnico TI</div>
+        </div>
+
+    </div>
+
+
+
+    <div class="formprincipal">
+
+        <div class="tituloinv">
+            <h6>AGREGAR COLABORADOR</h6>
+        </div>
+        <br>
+        </br>
+
+
+        <div class="tituloinv">
+            <h6>Información Personal</h6>
+        </div>
+        <br>
+        </br>
+
+
+        <div class="formprincipal">
+            <h:form class="row g-3 needs-validation">
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer01">Fecha Ingreso</h:outputLabel>
+                    <h:inputText type="date" class="form-control is-invalid" id="validationServer01" placeholder="Ingrese la fecha " value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Ingrese una fecha válida.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer02 ">Fecha Retiro</h:outputLabel>
+                    <h:inputText type="date" class="form-control" id="validationServer02" placeholder="Ingrese Fecha de retiro" value="" />
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer03">Nombre</h:outputLabel>
+                    <h:inputText type="text " class="form-control is-valid" id="validationServer03" placeholder="Digite el nombre" value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Corregir dato.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer04">Apellido</h:outputLabel>
+                    <h:inputText type="text " class="form-control is-valid" id="validationServer04" placeholder="Digite el apellido " value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Corregir dato.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer05">Estado Civil</h:outputLabel>
+                    <h:selectOneMenu type="text " class="form-control is-invalid" id="validationServer05" placeholder="Seleccione el estado civil" value="">
+                        <f:selectItem  itemValue="Soltero" itemLabel="Soltero"/>
+                        <f:selectItem  itemValue="Casado" itemLabel="Casado"/>
+                        <f:selectItem  itemValue="Union libre" itemLabel="Unión libre"/>
+                        <f:selectItem  itemValue="Viudo" itemLabel="Viudo"/>
+                    </h:selectOneMenu>
+                    <div class="valid-feedback">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Seleccione un Estado Civil de la lista.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer06">Género</h:outputLabel>
+                    <h:selectOneMenu type="text" class="form-control is-invalid" id="validationServer06" placeholder="Seleccione el género" value="">
+                        <f:selectItem  itemValue="Masculino" itemLabel="Masculino"/>
+                        <f:selectItem  itemValue="Femenino" itemLabel="Femenino"/>
+                    </h:selectOneMenu>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Seleccione un Género de la lista.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer07">Cédula</h:outputLabel>
+                    <h:inputText type="phone number" class="form-control is-invalid" id="validationServer07" placeholder="Número de cédula " value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        El campo no puede estar vacío.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer08">Correo</h:outputLabel>
+                    <h:inputText type="email" class="form-control is-invalid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ej. micorreo@gconsultor.com.co"/>
+                    <div class="invalid-feedback ">
+                        Ingrese un formato de correo valido.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer08">Dirección</h:outputLabel>
+                    <h:inputText type="text " class="form-control is-invalid" id="validationServer08" placeholder="Dirección " value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        El campo no puede estar vacío.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer09">Barrio</h:outputLabel>
+                    <h:inputText type="text " class="form-control" id="validationServer09" placeholder="Barrio" value=""/>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer10">Ciudad</h:outputLabel>
+                    <h:inputText type="text " class="form-control is-invalid" id="validationServer10" placeholder="Ciudad" value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        El campo no puede estar vacío.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer11">N° Fijo</h:outputLabel>
+                    <h:inputText type="Phone number" class="form-control" id="validationServer11" placeholder="Número fijo " value=""/>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer12">N° Celular</h:outputLabel>
+                    <h:inputText type="Phone number" class="form-control" id="validationServer12" placeholder="Número de celular " value=""/>
+                </div>
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer13">Área de ubicación</h:outputLabel>
+                    <h:selectOneMenu type="text " class="form-control is-invalid" id="validationServer13" placeholder="Área de ubicación" value="">
+
+                        <f:selectItem  itemValue="Administrativo" itemLabel="Administrativo"/>
+                        <f:selectItem  itemValue="Operativo" itemLabel="Operativo"/>                       
+                        <f:selectItem  itemValue="Juridico" itemLabel="Jurídico"/>
+                    </h:selectOneMenu>
+
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Seleccione de la lista.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <h:outputLabel for="validationServer14">Fecha de Nacimiento</h:outputLabel>
+                    <h:inputText type="date" class="form-control is-invalid" id="validationServer14" placeholder="Indique fecha de nacimiento" value=""/>
+                    <div class="valid-feedback ">
+                        Dato correcto.
+                    </div>
+                    <div class="invalid-feedback ">
+                        Ingrese una fecha válida.
+                    </div>
+                </div>
+            </h:form>
+        </div>
+
+
+
+    </div>
+
+    <br></br>
+
+    <br></br>
+    <div class="tituloinv">
+        <h6>Información Contacto de Emergencia</h6>
+    </div>
+    <br></br>
+    <br></br>
+
+    <div class="formprincipal">
+
+
+
+        <h:form class="row g-3 needs-validation">
+
+
+            <div class="col-md-8">
+                <h:outputLabel for="validationServer15">Nombre contacto principal</h:outputLabel>
+                <h:inputText type="text " class="form-control is-valid" id="validationServer15" placeholder="Digite el nombre del contacto" value=""/>
+                <div class="valid-feedback ">
+                    Dato correcto.
+                </div>
+                <div class="invalid-feedback ">
+                    Corregir dato.
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h:outputLabel for="validationServer16">Parentesco</h:outputLabel>
+                <h:selectOneMenu type="text " class="form-control is-invalid" id="validationServer16" placeholder="Seleccione el parentesco" value="">
+                    <f:selectItem  itemValue="Padre" itemLabel="Padre"/>
+                    <f:selectItem  itemValue="Madre" itemLabel="Madre"/>
+                    <f:selectItem  itemValue="Esposo" itemLabel="Esposo"/>
+                    <f:selectItem  itemValue="Hermana" itemLabel="Hermana"/>
+                </h:selectOneMenu>
+                <div class="valid-feedback ">
+                    Dato correcto.
+                </div>
+                <div class="invalid-feedback ">
+                    Seleccione de la lista.
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <h:outputLabel for="validationServer17">N° Celular</h:outputLabel>
+                <h:inputText type="Phone number" class="form-control is-invalid" id="validationServer17" placeholder="Número de celular " value=""/>
+                <div class="valid-feedback ">
+                    Dato correcto.
+                </div>
+                <div class="invalid-feedback ">
+                    El campo no puede estar vacío.
+                </div>
+            </div>
+        </h:form>
+    </div>
+
+
+
+    <br></br>
+    <br></br>
+    <div class="tituloinv ">
+        <h6>Cuenta de Usuario</h6>
+    </div>
+    <br></br>
+    <br></br>
+    <div class="formprincipal ">
+        <h:form>
+
+
+        <div class="col-md-8 ">
+            <h:outputLabel for="validationServer19 ">Usuario de Dominio</h:outputLabel>
+            <h:inputText type="text " class="form-control " id="validationServer19" placeholder="Digite el usuario de dominio " value=""/>
+            <div class="valid-feedback ">
+                Dato correcto.
+            </div>
+            <div class="invalid-feedback ">
+                Corregir dato.
+            </div>
+        </div>
+
+        <div class="col-md-8 ">
+            <h:outputLabel for="validationServer20 ">Contraseña de Dominio</h:outputLabel>
+            <h:inputText type="text" class="form-control" id="validationServer20" placeholder="Digite la contraseña de dominio " value=""/>
+            <div class="valid-feedback ">
+                La contreseña cumple los criterios de seguridad.
+            </div>
+            <div class="invalid-feedback ">
+                La contreseña NO cumple los criterios de seguridad.
+            </div>
+        </div>
+            </h:form>
+
+
+        <br></br>
+        <br></br>
+
+        <div>
+            <button class="btn btn-primary " type="submit ">Guardar</button>
+            <button class="btn btn-primary " type="submit ">Cancelar</button>
+            <button type="button" class="btn btn-secondary">Acta Usuario</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="fila">
+        <footer>
+            <div class="contain ">
+                <div class="row ">
+
+                    <div>
+                        <ul class="social-network social-circle ">
+
+                            <li><a href="https://www.facebook.com/JelkhAbogados/?ti=as " class="icoFacebook " title="Facebook "><i class="fa fa-facebook "></i></a></li>
+                            <li><a href="https://twitter.com/grupo_consultor?lang=es " class="icoTwitter " title="Twitter "><i class="fa fa-twitter "></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/grupo-consultor-andino-sa-21a74959/?originalSubdomain=co " class="icoLinkedin " title="Linkedin "><i class="fa fa-linkedin "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</html>
+<!--
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ " crossorigin="anonymous "></script>
+
+                                <script>
+                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                    (function () {
+                                        'use strict';
+                                        window.addEventListener('load', function () {
+                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                            var forms = document.getElementsByClassName('needs-validation');
+                                            // Loop over them and prevent submission
+                                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                                form.addEventListener('submit', function (event) {
+                                                    if (form.checkValidity() === false) {
+                                                        event.preventDefault();
+                                                        event.stopPropagation();
+                                                    }
+                                                    form.classList.add('was-validated');
+                                                }, false);
+                                            });
+                                        }, false);
+                                    })();
+                                </script>
+                                </html>
+-->
+

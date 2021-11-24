@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>GPR Inicio</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="#{request.contextPath}/css/gpr.css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/css/calendar.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
+
+    </h:head>
+    <h:body>
+        <nav>
+            <div class="fila">
+                <div class="nav">
+                    <img class="logo" src="#{request.contextPath}/image/logotipo_peq.png" alt="logo"/>
+                </div>
+
+                <div class="nav">
+                    <a class="button button_black button_selected" href="#{request.contextPath}/index.xhtml">Home</a>
+                    <a class="button button_black" href="#{request.contextPath}/modulos/gestion/gestion_incidentes.xhtml">Incidentes</a>
+                    <a class="button button_black" href="#{request.contextPath}/modulos/colaboradores/colaboradores.xhtml">Colaboradores</a>
+                    <a class="button button_black" href="#{request.contextPath}/modulos/inventarios/inventario.xhtml">Inventario</a>
+                    <a class="button button_black" href="#{request.contextPath}/modulos/registro/Registro.xhtml">Salir</a>
+                </div>
+                <div class="nav" style="max-width: 100px;">
+                    <div class="avatar">
+                        <img class="imguser" src="#{request.contextPath}/image/Logo_user.png" alt="imguser"/>
+                    </div>
+                    <div style="max-width: 80px;">Tecnico TI</div>
+
+                </div>
+            </div>
+        </nav>
+
+        <div style="padding-top: 10px">
+            <div class="contenido">
+
+                <div style="border:black 1px solid; width: 60%; margin-right: 4px; display: grid; align-items: center; justify-content: center;">
+                    <div style="padding: 10px; text-align: center; ">
+                        <h6>Estadísticas Semanales</h6>
+                        <br></br>
+                        <br></br>
+                    </div>
+                    <img style="width: 100%;" src="#{request.contextPath}/image/estadisticas.png" alt="imguser"/>
+                    <img style="width: 100%;" src="#{request.contextPath}/image/AsignadoSinAsignar.PNG" alt="imguser"/>
+
+                </div>
+                <div style="border:black 1px solid; width: 40%;">
+                    <div>
+                        <div style="padding: 10px; text-align: center; ">
+                            <h6>Por Tipos de Fallo y Criticidad</h6>
+                            <br></br>
+                            <br></br>
+                        </div>
+                        <img style="width: 100%;" src="#{request.contextPath}/image/TipoCriticidad.PNG" alt="imguser"/>
+                    </div>
+                    <div class="month">
+                        <ul>
+                            <li class="prev">&#10094;</li>
+                            <li class="next">&#10095;</li>
+                            <li>Septiembre<br></br>
+                                <span style="font-size:18px">2021</span></li>
+                        </ul>
+                    </div>
+
+                    <ul class="weekdays">
+                        <li>Lu</li>
+                        <li>Ma</li>
+                        <li>Mi</li>
+                        <li>Ju</li>
+                        <li>Vi</li>
+                        <li>Sa</li>
+                        <li>Do</li>
+                    </ul>
+
+                    <ul class="days">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span class="active">10</span></li>
+                        <li>11</li>
+                        ...etc
+                    </ul>
+                </div>
+            </div>
+            <div class="fila">
+                <footer>
+                    <div class="contain">
+                        <div class="row">
+
+                            <div>
+                                <ul class="social-network social-circle">
+
+                                    <li><a href="https://www.facebook.com/JelkhAbogados/?ti=as" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/grupo_consultor?lang=es" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/grupo-consultor-andino-sa-21a74959/?originalSubdomain=co" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+            </div>
+        </div>
+    </h:body>
+</html>
+
